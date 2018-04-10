@@ -1,0 +1,471 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');*/
+	/*font-family: 'PT Sans Narrow', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end css reset */
+
+
+
+
+/*Navigation ko CSS*/
+
+
+
+#main{
+	
+	height: 68px;
+	background: black;
+}
+#menu ul{
+	    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: inherit;
+    position: absolute;
+    width: 100%;
+    margin-left: -4px;
+}
+
+#header1{
+	background: white;
+	height: 65px;
+	color: black;
+	position: fixed;
+	width: 100%;}
+
+#menu li{
+
+	float: left;
+        margin: 21px 80px 0px 55px;
+        font-size: 26px;
+    display: inline-block;
+
+}
+
+
+#menu li a{
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+#menu li a:hover{
+	opacity: 0.4;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allcontain{
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	background-color: #f9f9f9;
+	font-family: 'pt_sans_narrowregular';
+}
+ 
+a {
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+	text-decoration: none;
+}
+ 
+em {
+	font-style: oblique;
+}
+ 
+strong {
+	font-style: bold;
+}
+ 
+img {
+	width: 100%;
+}
+ 
+h1, h2, h3, h4, h5 {
+	font-family: 'pt_sans_narrowregular';
+	font-style: normal;
+}
+ 
+h3 {
+	text-transform: capitalize;
+	font-size: 1.875em;
+	padding: 0 0 1% 0;
+	color: #001833;
+	font-weight: 800;
+
+}
+
+p.paragraph{
+	text-align: justify;
+}
+header {
+	background: linear-gradient( rgba(224, 204, 200, 0.30), rgba(114,114,114, 0.90)), /* bottom, image */
+	url(img/header.jpg);
+	background-size: cover;
+	background-position: center top;
+	width: 100%;
+}
+ 
+.intro {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 8% 0;
+}
+ 
+.intro h1 {
+	font-size: 4em;
+	text-align: center;
+	color: #dcf4f8;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 800;
+	line-height: 1.5em;
+}
+ 
+.intro h2 {
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: 0.09em;
+}
+
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: 'pt_sans_narrowregular';
+	-webkit-animation-delay: 4s;
+	/* Chrome, Safari, Opera */
+	animation-delay: 2s;
+}
+ 
+.about {
+	padding: 4% 0;
+}
+ 
+.about p {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.8;
+	color: #616569;
+	letter-spacing: .03em;
+	margin: 10px auto;
+	font-size: 1.5em;
+	padding: 2% 0;
+}
+ 
+.about p a {
+	color: #E1CCC9;
+	border-bottom: 2px solid;
+}
+
+
+
+
+.work {
+	height: 300px;
+	padding: 2% 0;
+	text-align: center;
+}
+ 
+.work h3 {
+	padding: 4% 0;
+}
+ 
+.text-box {
+	float: left;
+	text-align: left;
+	width: 480px;
+	background-color: #fff;
+	height: 100%;
+}
+ 
+.text-box-content {
+	padding: 4% 8%;
+}
+ 
+.text-box-content p {
+	line-height: 1.8;
+	color: #616569;
+	letter-spacing: .03em;
+	font-size: 1em;
+}
+ 
+.button {
+	font-size: 1.3em;
+	padding: 5% 3%;
+	border: 3px solid black;
+	letter-spacing: 0.09em;
+	text-decoration: none;
+	color: #174a4a;
+	text-align: center;
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 4%;
+}
+ 
+.button:hover {
+	color: #fff;
+	background-color: #4e5556;
+}
+ 
+.image-area {
+	width: 480px;
+	height: 300px;
+	overflow: hidden;
+}
+ 
+.left {
+	float: left;
+}
+ 
+.right {
+	float: right;
+}
+
+
+.contact {
+		background: linear-gradient( rgba(224, 204, 200, 0.30), rgba(114,114,114, 0.90)), /* bottom, image */
+	url(img/header.jpg);
+	background-size: cover;
+	background-position: center top;
+
+
+
+	width: 100%;
+	/*background-color: #343536;*/
+	padding: 5% 0;
+	margin-top: 5%;
+	clear: both;
+}
+ 
+.contact-content {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+ 
+.contact-content h4 {
+	font-size: 1.875em;
+	padding: 1% 0;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+}
+ 
+.contact-content a {
+	color: #d4efef;
+	text-decoration: none;
+}
+.email {
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-size: 1.3em;
+}
+
+
+.image-divider {
+	padding: 15% 0;
+	height: 148px;
+	background: /* bottom, image */
+	url(img/zz.jpg);
+	background-size: cover;
+	background-position: center top;
+}
+
+
+
+
+
+footer {
+ 
+ background: linear-gradient( rgba(224, 204, 200, 0.30), rgba(114,114,114, 0.90)), /* bottom, image */
+ url(img/header.jpg);
+ color:#fff;
+ padding:2% 0;
+ width:100%;
+ clear:both;
+ height:100px;
+}
+ 
+.footer-content {
+
+ max-width:960px;
+ padding:2% 0;
+ margin:0 auto;
+ /*font-family: proxima-nova,sans-serif;*/
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ line-height: 1.4;
+ color: #fff;
+ letter-spacing: .06em;
+ font-size:1em;
+}
+ 
+.credit {
+ float:left;
+ font-size: 1.3em;
+}
+ 
+.social {
+ float:right;
+}
+ 
+.social li {
+ display:inline;
+}
+ 
+.social li a {
+ color:#fff;
+ padding:0.2em;
+ font-size:1.7em;
+ font-weight:450;
+}
+ 
+.social li a:hover {
+ color:#011833;
+}
+
+
+@media only screen and (max-width:1000px) {
+	.wrapper {
+		padding: 0% 4%;
+	}
+	.work {
+		padding: 4% 0;
+	}
+	.image-area {
+		float: left;
+		width: 100%;
+		height: auto;
+	}
+	.text-box {
+		width: 100%;
+		height: auto;
+	}
+	.social li a {
+		font-size: 1.4em;
+	}
+	.footer-content {
+		padding: 3.5%;
+	}
+}
+ 
+@media only screen and (max-width:800px) {
+	.intro h1 {
+		font-size: 4em;
+		line-height: 1.2;
+	}
+	.intro h2 {
+		font-size: 1.8em;
+		padding-top: 3%;
+	}
+	.about p {
+		font-size: 1em;
+		line-height: 2;
+	}
+	footer {
+		height: 130px;
+		line-height: 1.3em;
+	}
+	.footer-content {
+		padding: 4%;
+		font-size: 14px;
+	}
+	.social {
+		float: left;
+	}
+	.social li a {
+		font-size: 1.3em;
+	}
+	.contact-content {
+		font-size: 12px;
+		line-height: 1.5;
+	}
+}
+
+
+
+
+
+
+

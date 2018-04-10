@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');*/
+	/*font-family: 'PT Sans Narrow', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end css reset */
+
+
+
+
+body{
+  background: url('../img/back.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;	
+}
+
+
+ 
+h1, h2, h3, h4, h5 {
+	font-family: 'pt_sans_narrowregular';
+	font-style: normal;
+}
+ 
+h1 {
+	font-size: 2em;
+	text-align: center;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 800;
+	line-height: 1.5em;
+	margin-top: 25px;
+}
+ 
+h2 {
+	font-size: 2.5em;
+	text-align: center;
+	color: #f2f2f2;
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: 0.09em;
+}
+body{
+	background: url('../img/back.jpg');
+	background-size:cover;
+	background-repeat: no-repeat; 
+	font-family:'Helvetica';
+}
+
+.login{
+	float: none;
+	background: #ffffff63;
+	padding: 52px 95px 150px 94px;
+	margin-top: -10px;
+    margin-right: -5px;
+}
+.login2{
+	float: left;
+	background: #ffffff63;
+	padding: 52px 95px 150px 94px;
+	margin-top: -10px;
+    margin-right: -5px;
+}
+
+.login img{
+	margin-left: 25px;
+
+}
+
+.login h2{
+margin-left: 25px;
+margin-bottom: 0px;
+}
+
+.login h4{
+	margin-left: 25px;
+    margin-top: 0px;
+    color: #ccc;
+    font-weight: 100;
+}
+
+.loginform input{
+	    height: 35px;
+    margin: 15px;
+    border-radius: 12px;
+    border: none;
+    width: 280px;
+    text-align: left;
+    font-size: 14px;
+    display: inline;
+    padding-left: 10px;
+	
+}
+
+
+
+
+
+.loginform input:focus{
+    outline: none;
+}
+
+.joinbtn{
+	margin: 10px 30px 30px 20px  !important;
+    background-color: #353638;
+    color: #fbfbfb;
+    font-size: 18px !important ;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    width: 133px !important;
+    text-align: center;
+    height: 35px;
+
+}
+
+.joinbtn1{
+	margin: 10px 30px 30px 20px  !important;
+    background-color: #353638;
+    color: #fbfbfb;
+    font-size: 18px !important ;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    width: 265px !important;
+    text-align: center;
+    height: 35px;
+
+}
+
+
+a{
+    text-align: center;
+    font-weight: 200;
+    text-decoration: none;
+}
+.joinbtn:hover {
+	color: #fff;
+	background-color: #e03d3d;
+}
+ 

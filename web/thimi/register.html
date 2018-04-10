@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+
+<link rel="stylesheet" type="text/css" href="page.css">
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet1.css">
+
+  <script type="text/javascript">
+    function validateForm() {
+      var uname = document.forms["registerform"]["txtname"].value;
+      var email=document.forms["registerform"]["txtemail"].value;
+      var pass = document.forms["registerform"]["txtpass"].value;
+      var cpass=document.forms["registerform"]["txtcpass"].value;
+      var sq1=document.forms["registerform"]["txtpet"].value;
+      var sq2=document.forms["registerform"]["txtplayer"].value;
+      var atIndex,dotIndex,msg="";
+      if(uname == "" || pass == "" || cpass == "" || email == "" || sq1 == "" || sq2 == "" )
+      {
+        msg=msg+"Please fill the form completely."; 
+      }else{
+              if(pass.length<6)
+              {
+                 msg=msg+"\nPassword must have at least six characters";
+              }
+
+              atIndex=email.indexOf("@");
+              dotIndex=email.indexOf(".");
+              if(atIndex<0 || dotIndex<0)
+              {
+                  msg=msg+"\nEmail must have @ and . character";
+              }
+              if((dotIndex-atIndex)<5)
+              {
+                msg=msg+"\nThere should be at least 5 chracters between @ and . character";
+              }
+              if(pass!=cpass){
+                msg=msg+"\nPassword not matching"
+              }  
+      }
+        
+      if(msg=="")
+          return true;
+      else
+      {
+          alert(msg);
+          return false;
+      }
+
+    }     
+  </script>
+
+
+</head>
+<body>
+
+    <div style="background: #ddbebf;" id="header1">
+      <div id="menu">
+        <ul>
+          <li><a href="page.php" style="color: white; width: -1px; margin: 0px -42px 12px 549px;" />Thimi Ceramics</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="main">
+    </div>
+
+
+
+
+
+<div class="login" style="margin-top: 0px;">
+  <form class="loginform" name="registerform" action="register.php" method="POST">
+    <input type="text" placeholder= "Enter Your Username" name="txtname"><br>
+    <input type="text" placeholder= "Enter Your Email" name="txtemail"><br>
+    <input type="password" placeholder= "Password" name="txtpass"><br>
+    <input type="password" placeholder= "ConfirmPassword" name="txtcpass"><br>
+    <input type="text" placeholder= "What is your pet name?" name="txtpet"><br>
+    <input type="text" placeholder= "Who is your favourite football player?" name="txtplayer"><br>
+    
+    <button type="submit" class="joinbtn" onclick="return validateForm()">Register</button>
+      
+  </form>
+  
+  
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recover Password</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login">
+  <!-- <img src="assets/images/apple_logo.png" alt="Logo of Apple" width="60px"> -->
+  <!-- <h2>Good Morning!</h2>
+  <h4>This day will be great.</h4> -->
+  <form class="loginform" name="newpass" action="register.php" method="POST">
+    <input type="text" placeholder= "Enter New Password" name="txtpass"><br>
+    <input type="text" placeholder= "Confirm Password" name="txtcpass"><br>
+    <button type="submit" class="joinbtn" onclick="return validateForm()">Save</button>
+    
+      
+  </form>
+  
+  
+  
+</div>
+
+<script type="text/javascript">
+  function validateForm() {
+    var uname = document.forms["registerform"]["txtname"].value;
+    var pass = document.forms["registerform"]["txtpass"].value;
+    if(uname == "" || pass == "")
+    {
+      alert("Username and Password can't be empty"); 
+      return false;
+    }
+
+    else
+      return true;
+  }
+</script>
+</body>
+</html>
